@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { SlUserFemale } from "react-icons/sl"; // Importar el ícono de usuario femenino
 import { FaCaretDown } from "react-icons/fa"; // Para el dropdown
 import { useState } from "react";
 
@@ -17,11 +16,33 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <nav className="bg-purple-200 shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="container flex items-center justify-between p-4">
         <div className="flex items-center">
-          <SlUserFemale className="h-14 w-14 text-pink-500 mr-2" /> {/* Ícono de usuario femenino */}
+          {/* Reemplaza el ícono por una imagen */}
+          <img
+            src="/src/images/imag-proye-cla.jpg" // Ruta de la imagen
+            alt="Logo Cosmética Esmera"
+            className="h-16 w-17 object-cover mr-2"
+          />
           <h1 className="text-black font-bold text-2xl">Aquí Cosmética Esmera</h1>
+        </div>
+
+        {/* Apartado de búsqueda en el medio */}
+        <div className="flex-grow mx-8">
+          <form className="flex items-center justify-center">
+            <input
+              type="text"
+              placeholder="Buscar..."
+              className="w-full max-w-md px-4 py-2 text-lg border border-pink-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+            />
+            <button
+              type="submit"
+              className="ml-2 px-4 py-2 bg-pink-500 text-white font-bold rounded-lg hover:bg-pink-700 transition duration-300 ease-in-out"
+            >
+              Buscar
+            </button>
+          </form>
         </div>
 
         <ul className="flex space-x-4 relative">
