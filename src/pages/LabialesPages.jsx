@@ -3,6 +3,9 @@ function LabialesPages() {
     <div className="container mx-auto p-6">
       {/* Sección de Descripción del Producto */}
       <section className="mb-12">
+        <br />
+        <br />
+        <br />
         <h1 className="text-3xl font-bold mb-4">Labiales Esmera</h1>
         <p className="text-gray-700 text-lg">
           Nuestros labiales están formulados con ingredientes de alta calidad
@@ -42,6 +45,7 @@ function LabialesPages() {
               alt="Labial 2"
               className="w-full h-48 object-cover rounded-md"
             />
+           
             <h3 className="text-xl font-semibold mt-2 text-center">Labial Rosa Pastel</h3>
             <p className="text-gray-600 mt-1 text-center">
               Suave y delicado, perfecto para un look natural.

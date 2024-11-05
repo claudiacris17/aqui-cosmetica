@@ -1,72 +1,31 @@
-import { FaUser, FaEnvelope, FaComment } from "react-icons/fa"; // Importa los íconos de react-icons
+import { FaUser, FaEnvelope, FaComment } from "react-icons/fa";
 
+const InputField = ({ id, label, placeholder, type = "text", Icon }) => (
+  <div className="mb-4">
+    <label className="block text-gray-500 text-sm font-bold mb-2" htmlFor={id}>{label}</label>
+    <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden h-12">
+      <Icon className="text-gray-400 p-2 ml-2" size={40} />
+      <input 
+        type={type} 
+        id={id} 
+        placeholder={placeholder} 
+        className="flex-grow p-2 h-full focus:outline-none"
+        required 
+      />
+    </div>
+  </div>
+);
 
 function ContactPage() {
   return (
-    <div  className="container mx-auto p-6 flex justify-center bg-[url('/src/images/fondo.jpg')] bg-cover bg-center">
-      <form className="bg-slate-50 shadow-lg rounded-lg px-6 pt-4 pb-6 mb-4 mx-auto max-w-lg w-full">
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="name"
-          >
-            Nombre
-          </label>
-          <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden">
-            <FaUser className="text-gray-400 p-2 ml-2" size={35} />
-            <input
-              type="text"
-              id="name"
-              placeholder="Escribe tu nombre"
-              className="flex-grow p-2 focus:outline-none"
-              required
-            />
-          </div>
-        </div>
-
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="email"
-          >
-            Correo
-          </label>
-          <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden">
-            <FaEnvelope className="text-gray-400 p-2 ml-2" size={35} />
-            <input
-              type="email"
-              id="email"
-              placeholder="Correo electrónico"
-              className="flex-grow p-2 focus:outline-none"
-              required
-            />
-          </div>
-        </div>
-
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="message"
-          >
-            Mensaje
-          </label>
-          <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden">
-            <FaComment className="text-gray-400 p-2 ml-2" size={35} />
-            <textarea
-              id="message"
-              placeholder="Escribe un comentario"
-              className="flex-grow p-2 focus:outline-none"
-              rows="4"
-              required
-            />
-          </div>
-        </div>
-
+    <div className="w-full h-screen flex justify-center items-center bg-[url('/src/images/brochas.jpg')] bg-cover bg-center">
+      <form className="bg-slate-40 px-6 pt-4 pb-6 mb-4 max-w-lg w-full shadow-md">
+        <InputField id="name" label="Nombre" placeholder="Escribe tu nombre" Icon={FaUser} />
+        <InputField id="email" label="Correo" placeholder="Correo electrónico" type="email" Icon={FaEnvelope} />
+        <InputField id="message" label="Mensaje" placeholder="Escribe un comentario" type="textarea" Icon={FaComment} />
+        
         <div className="flex justify-center">
-          <button
-            type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
-          >
+          <button type="submit" className="bg-slate-600 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
             Enviar
           </button>
         </div>
