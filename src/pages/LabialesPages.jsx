@@ -2,16 +2,14 @@ function LabialesPages() {
   return (
     <div className="container mx-auto p-6">
       {/* Sección de Descripción del Producto */}
-      <section className="mb-12">
-        <br />
-        <br />
-        <br />
-        <h1 className="text-3xl font-bold mb-4">Labiales Esmera</h1>
-        <p className="text-gray-700 text-lg">
-          Nuestros labiales están formulados con ingredientes de alta calidad
-          para ofrecer colores intensos y larga duración. Disponibles en una
-          variedad de tonos que complementan cada estilo y ocasión.
-        </p>
+      <section className="mb-12 mt-16">
+        <div className="bg-pink-100 border border-pink-300 rounded-lg p-6 text-center shadow-lg">
+          <h1 className="text-4xl font-extrabold text-pink-500 mb-4">Labiales Esmera</h1>
+          <p className="text-gray-700 text-lg">
+            Nuestros labiales están formulados con ingredientes de alta calidad para ofrecer colores intensos y larga duración. 
+            Disponibles en una variedad de tonos que complementan cada estilo y ocasión.
+          </p>
+        </div>
       </section>
 
       {/* Sección del Catálogo de Productos */}
@@ -30,7 +28,6 @@ function LabialesPages() {
             <p className="text-gray-600 mt-1 text-center">
               Un rojo intenso y duradero para cualquier ocasión.
             </p>
-
             <div className="flex justify-center mt-4">
               <button className="bg-blue-500  hover:bg-blue-700 text-white px-4 py-2 rounded-lg mt-4">
                 Ver más
@@ -45,15 +42,14 @@ function LabialesPages() {
               alt="Labial 2"
               className="w-full h-48 object-cover rounded-md"
             />
-           
             <h3 className="text-xl font-semibold mt-2 text-center">Labial Rosa Pastel</h3>
             <p className="text-gray-600 mt-1 text-center">
               Suave y delicado, perfecto para un look natural.
             </p>
             <div className="flex justify-center mt-4">
-            <button className="bg-blue-500  hover:bg-blue-700 text-white px-4 py-2 rounded-lg mt-4">
-              Ver más
-            </button>
+              <button className="bg-blue-500  hover:bg-blue-700 text-white px-4 py-2 rounded-lg mt-4">
+                Ver más
+              </button>
             </div>
           </div>
 
@@ -69,9 +65,9 @@ function LabialesPages() {
               Un tono nude clásico que va con todo.
             </p>
             <div className="flex justify-center mt-4">
-            <button className="bg-blue-500  hover:bg-blue-700 text-white px-4 py-2 rounded-lg mt-4">
-              Ver más
-            </button>
+              <button className="bg-blue-500  hover:bg-blue-700 text-white px-4 py-2 rounded-lg mt-4">
+                Ver más
+              </button>
             </div>
           </div>
 
