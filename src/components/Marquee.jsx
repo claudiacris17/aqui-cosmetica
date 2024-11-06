@@ -2,10 +2,12 @@
 
 function Marquee() {
   return (
-    <div className="flex justify-center bg-yellow-200">
-      <marquee className="bg-yellow-200 whitespace-nowrap" style={{ width: '33%', margin: '0 10%' }} >
-        * Cosmética Esmera *
-      </marquee>
+    <div className="relative w-full overflow-hidden bg-fuchsia-800">
+      <div className="animate-marquee whitespace-nowrap  text-white font-extrabold text-sm">
+      <div className="w-full text-center">
+          💄 💅 🧴 ✨ Bienvenidos a Cosmética Esmera ✨ 🧴 💅 💄
+        </div>
+        </div>
     </div>
   );
 }
