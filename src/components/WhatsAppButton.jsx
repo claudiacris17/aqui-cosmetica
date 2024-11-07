@@ -11,7 +11,7 @@ function WhatsAppButton() {
     <div className="fixed bottom-5 right-5">
       <button 
         onClick={handleClick} 
-        className="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded-full shadow-lg flex items-center"
+        className="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full shadow-lg flex items-center"
       >
         <img 
           src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
