@@ -6,7 +6,7 @@ import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import Productos from "./pages/Productos";
 import LabialesPages from "./pages/LabialesPages";
-import Marquee from "./components/Marquee";
+
 import TerminosPages from "./pages/TerminosPages";
 import PoliticasPages from "./pages/PoliticasPages";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -16,7 +16,7 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <Marquee/>
+      
         {/* Aplicar la imagen de fondo con estilos en línea */}
         <main className="flex-grow bg-cover bg-center">
           <Routes>

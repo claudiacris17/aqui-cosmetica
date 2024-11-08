@@ -3,8 +3,10 @@
 function PoliticasPages() {
   return (
     <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
+      <br />
+      <br />
       <h1 className="text-3xl font-bold mb-4">Políticas de Privacidad</h1>
-      <p className="text-gray-600 mb-6">Última actualización: [Fecha]</p>
+      <p className="text-gray-600 mb-6">Última actualización: [08/11/2024]</p>
       
       <h2 className="text-2xl font-semibold mt-4 mb-2">1. Información que Recopilamos</h2>
       <p className="mb-4">

@@ -1,18 +1,11 @@
 import { Link } from "react-router-dom";
-import { FaCaretDown } from "react-icons/fa";
 import { useState } from "react";
 
 function Navbar() {
   const [activeLink, setActiveLink] = useState("/");
-  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleLinkClick = (path) => {
     setActiveLink(path);
-    setDropdownOpen(false); // Cierra el dropdown al hacer clic en un enlace
-  };
-
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
   };
 
   return (
@@ -57,6 +50,7 @@ function Navbar() {
                 Inicio
               </Link>
             </li>
+
             <li>
               <Link
                 to="/contact"
@@ -68,26 +62,17 @@ function Navbar() {
                 Contacto
               </Link>
             </li>
-            <li className="relative">
-              <button
-                onClick={toggleDropdown}
-                className="flex items-center justify-center px-4 py-1 border-2 border-blue-700 rounded-lg text-black hover:text-blue-700 hover:bg-blue-100 transition duration-300 ease-in-out text-lg"
+
+            <li>
+              <Link
+                to="/productos"
+                onClick={() => handleLinkClick("/productos")}
+                className={`flex items-center justify-center px-4 py-1 border-2 border-blue-700 rounded-lg text-black hover:text-blue-700 hover:bg-blue-100 transition duration-300 ease-in-out text-lg ${
+                  activeLink === "/productos" ? "bg-white" : ""
+                }`}
               >
-                Productos <FaCaretDown className="ml-1" />
-              </button>
-              {dropdownOpen && (
-                <ul className="absolute left-0 mt-2 bg-white shadow-lg rounded-md border border-gray-200">
-                  <li>
-                    <Link
-                      to="/productos"
-                      onClick={() => handleLinkClick("/productos")}
-                      className="block px-4 py-2 text-black  hover:text-blue-700 hover:bg-white transition duration-300 ease-in-out"
-                    >
-                      Todos
-                    </Link>
-                  </li>
-                </ul>
-              )}
+                Productos
+              </Link>
             </li>
           </ul>
         </div>
@@ -97,4 +82,3 @@ function Navbar() {
 }
 
 export default Navbar;
-

@@ -8,11 +8,11 @@ function Footer() {
         <p>&copy; 2024 Aquí Cosmética Esmera</p>
       </div>
       <div className='flex justify-center space-x-8 mb-4'>
-        <Link to="https://www.facebook.com" target="_blank" className='text-black hover:text-blue-700'>
+        <Link to="https://www.facebook.com/esmeraschoolOficial/?locale=es_ES" target="_blank" className='text-black hover:text-blue-700'>
           <FaFacebook className="w-8 h-8" />
         </Link>
         
-        <Link to="https://www.instagram.com" target="_blank" className='text-black hover:text-blue-700'>
+        <Link to="https://www.instagram.com/esmeraformacion/?hl=en" target="_blank" className='text-black hover:text-red-600'>
           <FaInstagram className="w-8 h-8" />
         </Link>
       </div>
