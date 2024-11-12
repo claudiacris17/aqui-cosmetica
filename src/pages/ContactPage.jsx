@@ -42,7 +42,7 @@ function ContactPage() {
 
   return (
     <div className="w-full h-screen flex justify-center items-center bg-[url('/src/images/background.jpg')] bg-cover bg-center">
-      <form onSubmit={handleSubmit} className="bg-white px-6 pt-4 pb-6 mb-4 max-1xl:w-full shadow-2xl">
+      <form onSubmit={handleSubmit} className="bg-white px-6 pt-12 pb-6 mb-4 max-1xl:w-full shadow-2xl mt-12">
         <h1 className="text-center text-black font-semibold md:text-2xl">Contacto</h1>
 
         <div className="flex space-x-4">
